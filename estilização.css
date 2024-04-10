@@ -1,0 +1,149 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #802914;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background:  #802914;
+    padding: 28px;
+    text-align: center;
+    width: 100%;
+    color: #e2e2e2;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .footer-content {
+        justify-content: space-between;
+    }
+}
+
+.logo img {
+    width: 500px; /* Ajuste o tamanho da logo conforme necessário */
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        margin-right: 0;
+    }
+}
+
+
+/* Galeria de fotos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #e2e2e2;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-style: double;
+    border-top-left-radius: 20px;
+    border-color: #802914;
+    transition: transform 0.3s all; /* Adicionando a transição */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% no hover */
+}
+
+.página2{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.página3{
+    background-color:  #e2e2e2;
+}
+/* CSS */
+.contêiner-dos-mapas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens do flexbox se ajustem conforme o tamanho da tela */
+    justify-content: center;
+    gap: 20px;
+}
+
+.mapa {
+    flex: 1; /* Permite que os mapas cresçam e encolham conforme necessário */
+    max-width: 50%; /* Define a largura máxima de cada mapa para metade do contêiner */
+    height: 300px;
+    border: none;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .mapa {
+        max-width: 100%; /* Faz cada mapa ocupar a largura total em telas menores */
+    }
+}
+.logoWhats{
+    height: 20px;
+    width: 20px;
+}
+.instaMMX{
+height: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-right: auto;
+}
+h2 {
+    text-align: center; /* Centraliza o texto do h2 horizontalmente */
+}
+
+p{
+    text-align: center;
+   
+}
+p1{
+    text-align: center;
+}
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    p {
+        padding: 12px 5%; /* Reduz o espaçamento lateral do p1 em telas menores */
+    }
+}
+.página3{
+    background-color:  #e2e2e2;
+    margin-bottom:auto;
+}
+.criador{
+    color: rgb(37, 186, 245);
+}
+
+/*imagens clicáveis*/
+.imagemClicavel {
+    width: 100%; /* Largura inicial da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    transition: all 0.5s; /* Transição suave ao mudar o tamanho */
+}
+
+.imagemClicavel:fullscreen { /* Estilo quando a imagem estiver em tela cheia */
+    width: 100vw; /* Largura da viewport */
+    height: 100vh; /* Altura da viewport */
+}
+
